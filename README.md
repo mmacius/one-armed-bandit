@@ -29,7 +29,7 @@ This is a simple casino game built with React. The game allows users to place be
 
 ## Usage
 
-1. **Start the Game**: Click the "Kręć!" button to start the game.
+1. **Start the Game**: Click the "Spin!" button to start the game.
 2. **Adjust Bet**: Use the "+" and "-" buttons to increase or decrease your bet amount.
 3. **Check Balance**: Your current balance is displayed at the top.
 
