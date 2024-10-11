@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-weight: bold;
+}
+
+:root {
+    --primary: #3c39ee;
+    --border: #0e2e74;
+    --item: #192e7486;
+    --background: #040814;
+    --white: white;
+    --black: rgba(0, 0, 0, 0.822);
+}
+
+body {
+    background-color: var(--background);
+    user-select: none;
+    width: 100%;
+    height: 100vh;
+}
+
+#root { 
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 30%;
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--item);
+    border-radius: 5px;
+}
+
+main > article > p {
+    font-size: 35px;
+}
+
+main > article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+main > article > button {
+    width: 100%;
+    background-color: gold;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+main > section {
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+main > section > section > h2 {
+    font-size: 30px;
+    background-color: var(--primary);
+    padding: 9px;
+    border-radius: 5px;
+    width: 258px;
+    text-align: center;
+}
+
+main > section > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+}
+
+main > section > section >  section > button {
+    color: white !important;
+    font-size: 30px;
+}
+
+main > section > section > section >  button:nth-child(1) {
+    border-radius: 5px 0px 0px 5px;
+}
+
+main > section > section > section >  button:nth-child(3) {
+    border-radius: 0px 5px 5px 0px;
+}
+
+main > section > section > section >  button:nth-child(1),
+main > section > section > section > button:nth-child(3) {
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main > section > section > section >  button:nth-child(2) {
+    width: 150px;
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    cursor: default;
+}
+
+main > section > section > section >  button:nth-child(2):hover {
+    background-color: var(--primary);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    outline: none;
+}
+
+main > section > section > section >  button:nth-child(2):active {
+    background-color: var(--primary);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    outline: none;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+thead {
+    width: 70px;
+    height: 70px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+main > section > section > section {
+    transition: all 300ms;
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+    transition: all 300ms;
+}
+
+@media (max-width: 1834px) {
+    main {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1370px) {
+    main {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1104px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media (max-width: 916px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 782px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    main > article > p {
+        font-size: 25px;
+    }
+    main {
+        width: 80%;
+    }
+    main > section > section {
+        font-size: 20px !important;
+    }
+    main > section > section > h2 {
+        font-size: 21px;
+        width: 100px;
+    }
+    main > section > section > section > button {
+        font-size: 20px;
+    }
+    main > section > section > section > button:nth-child(2) {
+        width: 70px;
+    }
+}
