@@ -55,7 +55,12 @@ function App() {
                 }, 100);
             }
         } else {
-            alert("You don't have enough funds in your account");
+            Swal.fire({
+                title: 'Error!',
+                text: 'You don\'t have enough funds in your account',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            })
         }
     };
 
@@ -99,16 +104,31 @@ function App() {
             if (bet + 100 < balance) {
                 setBet(bet + 100);
             } else {
-                alert("You don't have enough funds in your account");
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'You don\'t have enough funds in your account',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                })
             }
         } else if (value === "-") {
             if (bet > 100) {
                 setBet(bet - 100);
             } else {
-                alert("You can't bet less than 100$");
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'You can\'t bet less than 100$',
+                    icon: 'error',
+                    confirmButtonText: 'Ok'
+                })
             }
         } else {
-            alert("Something went wrong");
+            Swal.fire({
+                title: 'Error!',
+                text: 'Something went wrong',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            })
         }
     };
 
