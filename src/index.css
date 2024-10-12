@@ -14,6 +14,7 @@
     --background: #040814;
     --white: white;
     --black: rgba(0, 0, 0, 0.822);
+    --alert: #192e74;
 }
 
 body {
@@ -232,4 +233,20 @@ main > section > section > section {
     main > section > section > section > button:nth-child(2) {
         width: 70px;
     }
+}
+
+.swal2-container {
+    font-family: "Exo 2", sans-serif;
+    backdrop-filter: blur(10px);
+}
+
+.swal2-modal {
+    background-color: var(--alert);
+    color: var(--white);
+}
+
+.swal2-styled {
+    background-color: var(--primary);
+    font-family: "Exo 2", sans-serif;   
+    font-size: 20px;
 }
