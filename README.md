@@ -13,7 +13,7 @@ This is a simple casino game built with React. The game allows users to place be
 
 1. Clone the repository:
     ```
-    git clone https://github.com/yourusername/casino-game.git
+    git clone https://github.com/mmacius/one-armed-bandit.git
     cd casino-game
     ```
 
