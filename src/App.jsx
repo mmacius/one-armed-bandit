@@ -60,7 +60,7 @@ function App() {
                 text: 'You don\'t have enough funds in your account',
                 icon: 'error',
                 confirmButtonText: 'Ok'
-            })
+            });
         }
     };
 
@@ -109,7 +109,7 @@ function App() {
                     text: 'You don\'t have enough funds in your account',
                     icon: 'error',
                     confirmButtonText: 'Ok'
-                })
+                });
             }
         } else if (value === "-") {
             if (bet > 100) {
@@ -120,7 +120,7 @@ function App() {
                     text: 'You can\'t bet less than 100$',
                     icon: 'error',
                     confirmButtonText: 'Ok'
-                })
+                });
             }
         } else {
             Swal.fire({
@@ -128,7 +128,7 @@ function App() {
                 text: 'Something went wrong',
                 icon: 'error',
                 confirmButtonText: 'Ok'
-            })
+            });
         }
     };
 
@@ -136,7 +136,7 @@ function App() {
         <>
             <main>
                 <article>
-                    <p>{message}</p>
+                    <h1>{message}</h1>
                     <table>
                         <tbody>
                             <thead>{draw ? drawtab[0] : result[0]}</thead>
@@ -149,15 +149,15 @@ function App() {
                 <section>
                     <section>
                         <h1>Your balance</h1>
-                        <h2>{balance}$</h2>
+                        <h2>${balance}</h2>
                     </section>
                     <section>
-                        <h1>Bet</h1>
-                        <section className={startDraw ? "disable" : ""}>
-                            <button onClick={() => changeBet("-")}>-</button>
-                            <button>{bet}</button>
-                            <button onClick={() => changeBet("+")}>+</button>
-                        </section>
+                        <h1>Your Bet</h1>
+                        <section className={draw ? "disable" : ""}>
+                                <button onClick={() => changeBet("-")}><ion-icon name="remove"></ion-icon></button>
+                                <button>{bet}</button>
+                                <button onClick={() => changeBet("+")}><ion-icon name="add"></ion-icon></button>
+                            </section>
                     </section>
                 </section>
             </main>
